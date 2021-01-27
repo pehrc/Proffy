@@ -22,11 +22,12 @@
   margin-left: 2.4rem;
 }
 
-.teacher-item header div storng {
+.teacher-item header div strong {
   font: 700 2.4rem Arial;
   display: block;
   margin-top: 0.4rem;
 }
+
 .teacher-item header div span {
   font: 1.6rem;
   display: block;
