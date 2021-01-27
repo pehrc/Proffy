@@ -6,6 +6,7 @@ import "./styles.css";
 
 interface PageHeaderProps {
   title: string;
+  description?: string;
 }
 
 const PageHeader: React.FC<PageHeaderProps> = (props) => {
@@ -19,9 +20,13 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
       </div>
       <div className="header-content">
         <strong>{props.title}</strong>
+        <p>{props.description}</p>
         {props.children}
       </div>
     </header>
   );
 };
 export default PageHeader;
+
+// { props.description ? <p>{props.description}</p> : null } => condição para se existir ou não a descrição.
+// Também podendo ser feito desta forma { props.description && <p>{props.description}</p> } => a segunda parte só executa caso a primeira exista ou seja verdadeira.
